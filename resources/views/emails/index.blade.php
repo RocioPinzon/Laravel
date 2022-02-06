@@ -1,7 +1,3 @@
-
-@extends('layouts.app2')
-
-@section('content')
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -24,5 +20,3 @@
     <p><strong>Mensaje: </strong>{{ $contacto['mensaje'] }}</p>
 </body>
 </html>
-
-@endsection

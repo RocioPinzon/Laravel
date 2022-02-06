@@ -9,12 +9,6 @@
             </a>
         </div>
     </div>
-
-    @if(session()->has('success'))
-        <div class="alert alert-success">
-            {{ session()->get('success') }}
-        </div>
-    @endif
     
     <table class="border-separate border-2 text-center border-gray-500 mt-3" style="width: 100%">
         <thead>

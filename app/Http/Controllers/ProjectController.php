@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Response;
 
 class ProjectController extends Controller
 {

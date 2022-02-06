@@ -16,12 +16,16 @@ class ContactaController extends Controller
 
     public function store(Request $request){
        //dd($request);
-       
+       $request->validate([
+           'name'=>'required',
+           'email'=>'required|email',
+           'mensaje'=>'required',
+       ]);
         
         
         $correo = new ContactaMail($request->all());
         
-       dd($correo);
+        //dd($correo);
         Mail::to('rociopinzonb@gmail.com')->send($correo);
     
         return redirect(route('contacta.index'))->with('success', 'Email enviado');
